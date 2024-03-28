@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {
@@ -22,8 +23,12 @@ const routes: Routes = [
         {
             path:'dashboard',
             component:DashboardComponent
-        }
+        } 
     ]
+},
+{
+    path:'admin',
+    component:AdminComponent
 },
 {
     path:'**',

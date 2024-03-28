@@ -2,10 +2,14 @@
 <div class="container">
     <nav>
       <ul>
-        <li><a routerLink="dashboard">user</a></li>
+        <li><a routerLink="dashboard" routerLinkActive="active">home</a></li>
+        <li><a routerLink="admin" routerLinkActive="active">Admin</a></li>
       </ul>
     </nav>
     <section>
+        <div class="p-3">
+        <button type="submit" class="btn btn-danger" (click)="logout()">Logout</button>
+        </div>
         <router-outlet></router-outlet>
     </section>
   </div>
